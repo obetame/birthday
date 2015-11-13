@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<title>登录窗口</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no ">
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="css/check.css"/>
+</head>
+	<body onload='load();'>
+		<div id="center_right" data-sr='ease-in 100px'>
+		<h1>请输入信息登录</h1>
+		<form id='check'>
+			<label>你的名字:
+			<input  type="text" onBlur="checkuser()" id="user" placeholder="请输入名字..."/>
+			</label>
+			<span id="checkuser"/></span>
+			<br/>
+			<label>身份证号:
+	        <input  type="password" onBlur="checkpassword()" id="password"  placeholder="请输入密码..." />
+	        </label>
+	        <span id="checkpassword" /></span>
+	        <br/>
+	        <input id='login' type='button' onclick='check()' value='登录'/>
+	    </form>
+	    <input id='textlogin' type='button' onclick='textcheck()' value='游客登录' style="float:right;"/>
+	</div>
+<script src='scrollReveal/scrollReveal.js'></script>
+<script>window.sr = new scrollReveal();</script>
+<script type="text/javascript" src="assets/three.min.js"></script>
+<script type="text/javascript" src="assets/Detector.js"></script>
+<script id="vs" type="x-shader/x-vertex">
+
+			varying vec2 vUv;
+
+			void main() {
+
+				vUv = uv;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+			}
+
+		</script>
+
+		<script id="fs" type="x-shader/x-fragment">
+
+			uniform sampler2D map;
+
+			uniform vec3 fogColor;
+			uniform float fogNear;
+			uniform float fogFar;
+
+			varying vec2 vUv;
+
+			void main() {
+
+				float depth = gl_FragCoord.z / gl_FragCoord.w;
+				float fogFactor = smoothstep( fogNear, fogFar, depth );
+
+				gl_FragColor = texture2D( map, vUv );
+				gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+
+			}
+
+		</script>
+	<script src="js/checkdonghua.js"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/check.js"></script>
+</body>
+</html>

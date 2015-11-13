@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>happy birthday</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link type='text/css' rel='stylesheet' media="screen" href='index.css'/>
+<link rel='ico' href="love.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no ">
+</head>
+<body>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="http://music.163.com/outchain/player?type=2&id=18836965&auto=1&height=32"></iframe>
+<!--第一个的-->
+<div id='div1'>
+	<h1 data-sr="enter top,hustle 100px,reset">相遇</h1>
+	<div class='left' data-sr="wait 0.5s,enter top, hustle 100px,reset"><img src="QQ1.png"/><h2 class='lefth2'>还记得我们第一次见面的那一天嘛?</h2></div>
+	<br/><br/><br/><br/>
+	<div class='right' data-sr="wait 1s, ease-in-out 100px,reset"><h2 class='righth2'>那天阳光明媚,你格外耀眼<span>(太阳)</span></h2><img src="QQ.jpg"/></div>
+	<br/><br/><br/><br/>
+	<div class='left' data-sr="enter top,wait 1.5s, hustle 100px,reset"><img src="QQ1.png"/><h2 class='lefth2'>你就会耍嘴皮子...</h2></div>
+	<br/><br/><br/><br/>
+	<div class='right' data-sr="wait 2s, ease-in-out 100px,reset"><h2 class='righth2'>那你觉得那天是怎样的呀?</h2><img src="QQ.jpg"/></div>
+	<br/><br/><br/><br/>
+	<div class='left' data-sr="enter top,wait 2.5s, hustle 100px,reset"><img src="QQ1.png"/><h2 class='lefth2'>我呀?我不记得了<span>(偷笑...)</span></h2></div>
+	<br/><br/><br/><br/>
+	<div class='right' data-sr="wait 3s, ease-in-out 100px,reset"><h2 class='righth2'>我才不信呢...</h2><img src="QQ.jpg"/></div>
+	<br/><br/><br/><br/>
+	<div class='left' data-sr="enter top,wait 3.5s, hustle 100px,reset"><img src="QQ1.png"/><h2 class='lefth2'>逗你啦!我看到的和你一样</h2></div>
+</div>
+
+<!--第二个-->
+<div id="div2">
+	<h1 data-sr="enter bottom, hustle 100px,reset">我们都是笨蛋</h1>
+	<div id='div2_left' data-sr="enter top, hustle 100px,reset">
+		<h2>我</h2>
+		<h2>答</h2>
+		<h2>应</h2>
+		<h2>你</h2>
+		<h2>为</h2>
+		<h2>我</h2>
+		<h2>们</h2>
+		<h2>的</h2>
+		<h2>未</h2>
+		<h2>来</h2>
+		<h2>努</h2>
+		<h2>力</h2>
+		<h3 style="float:right;width:40%;">|大笨蛋</h3>
+	</div>
+	<div id='div2_right' data-sr="enter bottom, hustle 100px,reset">
+		<h3 style="float:left;width:40%;">小笨蛋<br/>|</h3>
+		<h2 style="clear:both;">我</h2>
+		<h2>答</h2>
+		<h2>应</h2>
+		<h2>我</h2>
+		<h2>会</h2>
+		<h2>好</h2>
+		<h2>好</h2>
+		<h2>照</h2>
+		<h2>顾</h2>
+		<h2>自</h2>
+		<h2>己</h2>
+	</div>
+</div>
+
+<!--第3个-->
+<div id='div3'>
+	<h1 data-sr="enter bottom, hustle 100px,reset">旅行</h1>
+	<div style="margin-top:100px;">
+		<h2 data-sr="enter left,wait 1s, hustle 100px,reset">你知道吗?2014年的国庆,是我那年最开心的时候...</h2>
+	</div>
+	<div class='div3_left' data-sr='enter top ,hustle 30%,over 1.5s,reset'>
+		<h1>玩</h1>
+		<p>看电影</p>
+		<br/>
+		<p>拉着手满大街逛</p>
+		<br/>
+		<p>去国色天香玩一整天</p>
+	</div>
+	<div class="div3_right" data-sr='enter bottom,hustle 30%,over 1.5s,reset'>
+		<h1>吃</h1>
+		<p>还记得泡面配夫妻肺片吗?</p>
+		<br/>
+		<p>说好的宽窄巷子一直没去...</p>
+		<br/>
+		<p>还记得每个菜都有浓浓花椒味吗?</p>
+	</div>
+</div>
+
+<!--第4个-->
+<div id='div4'>
+	<h1 data-sr='roll 180deg,reset'>生日快乐!</h1>
+	<div id='top'>
+		<h2 id='date' data-sr="enter left, hustle 100px,wait 0.5s,reset"></h2>
+		<h2 data-sr="enter right, hustle 100px,wait 0.5s,reset">"对不起,没能陪你过生日..."</h2>
+	</div>
+	<div class='div4_one'>
+		<h2 style="padding-top:12%;" data-sr='spin 180deg,wait 1s,over 2s,reset'>"相信我,我会用一个大大的蛋糕来补偿你"</h2>
+	</div>
+</div>
+
+<script src='scrollReveal/scrollReveal.js'></script>
+<script>
+window.sr = new scrollReveal();
+var d1=Date.parse("2013/11/13 12:00:00");/*Date.parse()返回毫秒数*/
+function data(){
+	var d=new Date();
+	var d2=Date.parse(d);
+	var d3=(d2-d1)/1000;
+	if(d3>=31536000){
+		var dy=Math.floor(d3/31536000);
+		var dt=Math.floor((d3-dy*31536000)/86400);
+	}
+	else{
+		var dy=0;
+		var dt=Math.floor(d3/86400);
+	}
+	document.getElementById("date").innerHTML="我们已经相识"+dy+"年"+dt+"天了";
+	
+}
+window.onload=data;
+
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# 生日网站(中文版Chinese version)
+# 生日网站(中文翻译Chinese version)
 
 #### 初衷
 
@@ -15,7 +15,7 @@
 
 
 
-# birthday website(英文版English version)
+# birthday website(英文翻译English version)
 ####original intention
 
 * for my girl to does a website, the programmer will be like this! And girlfriend said she was very moved, very happy!
